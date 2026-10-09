@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pritisneha Das — Computer Science Engineering Student (2025 – 2029) at Dhemaji Engineering College (DEC), Assam. Portfolio showcasing distributed systems, backend architectures, and engineering projects.">
+  <meta name="description" content="Pritisneha Das — Computer Science Engineering Student (2025 – 2029) at Dhemaji Engineering College (DEC), Assam. Portfolio showcasing low-level C and C++ systems programming, data structures, and algorithms on Fedora Linux.">
   <meta name="author" content="Pritisneha Das">
-  <meta name="keywords" content="Pritisneha Das, Computer Science, Dhemaji Engineering College, DEC, Software Engineer, Portfolio, Assam, Systems Engineer, ASTU">
+  <meta name="keywords" content="Pritisneha Das, C, C++, Fedora Linux, Computer Science, Dhemaji Engineering College, DEC, Data Structures, Algorithms, Systems Programming">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Pritisneha Das | CS Engineering Portfolio">
-  <meta property="og:description" content="Computer Science Engineering student (2025 – 2029) from Dhemaji Engineering College. Systems, backend engineering, and modern web architectures.">
+  <meta property="og:title" content="Pritisneha Das | C &amp; C++ Systems Engineering Portfolio">
+  <meta property="og:description" content="Computer Science Engineering student (2025 – 2029) from Dhemaji Engineering College. C &amp; C++ systems programming, data structures, algorithms, and Fedora Linux workflow.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="image.webp">
 
-  <title>Pritisneha Das | Computer Science & Engineering Portfolio</title>
+  <title>Pritisneha Das | C &amp; C++ Systems Engineer | DEC</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1118,6 +1118,88 @@
       z-index: 2;
     }
 
+    .project-preview-terminal {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 10%, #0e1726 0%, #060911 100%);
+      padding: 0 16px;
+      position: relative;
+    }
+
+    .preview-cli-window {
+      width: 100%;
+      height: calc(100% - 32px);
+      margin-top: 32px;
+      background: #080d19;
+      border: 1px solid var(--border-subtle);
+      border-bottom: none;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: border-color var(--transition-normal);
+    }
+
+    .project-card:hover .preview-cli-window {
+      border-color: rgba(var(--accent-cyan-rgb), 0.4);
+    }
+
+    .preview-cli-top {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: #0d1527;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .p-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot-r { background: #ef4444; }
+    .dot-y { background: #f59e0b; }
+    .dot-g { background: #10b981; }
+
+    .preview-cli-title {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--text-muted);
+      margin-left: 6px;
+    }
+
+    .preview-cli-code {
+      padding: 10px 14px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      background: #060a14;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .cli-line {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .c-prompt { color: var(--accent-green); font-weight: 600; margin-right: 4px; }
+    .c-cmd { color: #f8fafc; font-weight: 500; }
+    .c-dim { color: var(--text-muted); }
+    .c-cyan { color: var(--accent-cyan); }
+    .c-green { color: #34d399; }
+    .c-kw { color: #f43f5e; font-weight: 600; }
+    .c-type { color: #38bdf8; }
+
     .project-body {
       padding: var(--space-xl);
       display: flex;
@@ -1798,14 +1880,14 @@
           </h1>
 
           <div class="hero-role" aria-live="polite">
-            <span id="typing-text">Computer Science Engineer</span>
+            <span id="typing-text">C &amp; C++ Systems Programmer</span>
             <span class="typing-cursor" aria-hidden="true"></span>
           </div>
 
           <p class="hero-description">
             Computer Science & Engineering student at <strong>Dhemaji Engineering College (DEC)</strong>, Tezpur, Assam. 
-            Building clean, efficient web and system applications using <strong>C, C++, HTML, CSS, JavaScript, Next.js, PostgreSQL</strong>, 
-            and <strong>REST APIs</strong> in a <strong>Fedora Linux</strong> environment.
+            Focused on low-level systems programming, data structures, dynamic memory management, and algorithmic problem-solving 
+            using <strong>C</strong> and <strong>C++</strong> in a <strong>Fedora Linux</strong> workstation environment.
           </p>
 
           <div class="hero-actions">
@@ -1830,7 +1912,7 @@
         <div class="hero-visual-card" aria-label="Engineer Profile Telemetry">
           <div class="dev-profile-header">
             <div class="profile-avatar-wrapper">
-              <img src="./avatar.jpg" alt="Pritisneha Das - Computer Science Engineer" class="profile-avatar-img" width="90" height="90">
+              <img src="./image.webp" alt="Pritisneha Das - Computer Science Engineer" class="profile-avatar-img" width="90" height="90">
               <div class="avatar-live-badge" title="Active Core Engineer"></div>
             </div>
             <div class="dev-profile-meta">
@@ -1855,7 +1937,7 @@
             </div>
             <div class="stat-box">
               <span class="stat-label">Primary Stack</span>
-              <span class="stat-value">C++ · Next.js · Postgres</span>
+              <span class="stat-value text-cyan">C / C++ (STL)</span>
             </div>
             <div class="stat-box">
               <span class="stat-label">Graduation</span>
@@ -1897,7 +1979,7 @@
             </div>
             <div class="terminal-title" id="terminal-heading">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-              <span>pritisneha@dec-cs: ~/portfolio-v2.5</span>
+              <span>pritisneha@fedora-dec: ~/portfolio-v2.5</span>
             </div>
             <div class="terminal-actions">
               <span class="terminal-shortcut-hint">Press [T] to focus</span>
@@ -1907,7 +1989,7 @@
           <div class="terminal-body" id="terminal-screen" role="log" aria-live="polite">
             <div class="terminal-output" id="terminal-output">
               <div class="terminal-line text-cyan font-mono">
-                [SYSTEM BOOT] Pritisneha Das Engineering Terminal v2.5.0 initialized.
+                [SYSTEM BOOT] Pritisneha Das Engineering Terminal v2.5.0 initialized (Fedora Linux).
               </div>
               <div class="terminal-line text-secondary font-mono">
                 DEC node connection active. Type <span class="text-green">'help'</span> to see available commands or click the chips below.
@@ -1916,7 +1998,7 @@
 
             <!-- Active Input Row -->
             <div class="terminal-input-row">
-              <span class="terminal-input-prompt">pritisneha@dec-cs:~$</span>
+              <span class="terminal-input-prompt">pritisneha@fedora-dec:~$</span>
               <input type="text" id="terminal-input" class="terminal-input-field" autocomplete="off" spellcheck="false" aria-label="Terminal command input" placeholder="Type a command (e.g. 'help', 'skills', 'projects')...">
             </div>
           </div>
@@ -1949,117 +2031,73 @@
           </span>
           <h2 class="section-title" id="skills-heading">Technical Skills &amp; Stack</h2>
           <p class="section-subtitle">
-            Core programming languages, modern web standards, full-stack frameworks, databases, and Fedora Linux workflow.
+            Core focus on C and C++ programming, data structures, algorithms, and development on Fedora Linux.
           </p>
         </div>
 
         <!-- Filter Navigation -->
         <div class="skills-filter-nav" role="tablist" aria-label="Skills Category Filter">
           <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All Skills</button>
-          <button class="filter-btn" data-category="languages" role="tab" aria-selected="false">C &amp; C++</button>
-          <button class="filter-btn" data-category="frontend" role="tab" aria-selected="false">HTML, CSS &amp; JS</button>
-          <button class="filter-btn" data-category="frameworks" role="tab" aria-selected="false">Next.js</button>
-          <button class="filter-btn" data-category="backend" role="tab" aria-selected="false">PostgreSQL &amp; REST API</button>
-          <button class="filter-btn" data-category="tools" role="tab" aria-selected="false">Fedora Linux &amp; Tools</button>
+          <button class="filter-btn" data-category="c-cpp" role="tab" aria-selected="false">C &amp; C++ Systems</button>
+          <button class="filter-btn" data-category="dsa" role="tab" aria-selected="false">Data Structures &amp; Algorithms</button>
+          <button class="filter-btn" data-category="fedora" role="tab" aria-selected="false">Fedora Linux &amp; Tools</button>
+          <button class="filter-btn" data-category="web" role="tab" aria-selected="false">Web Foundations</button>
+          <button class="filter-btn" data-category="cs-core" role="tab" aria-selected="false">CS Principles</button>
         </div>
 
         <!-- Skills Grid -->
         <div class="skills-grid" id="skills-grid">
           
-          <!-- Card 1: C & C++ -->
-          <div class="skill-card" data-domain="languages">
+          <!-- Card 1: C & C++ Systems Programming -->
+          <div class="skill-card" data-domain="c-cpp">
             <div class="skill-card-header">
               <div class="skill-card-title-group">
                 <div class="skill-card-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                 </div>
-                <h3 class="skill-card-name">C &amp; C++ Programming</h3>
+                <h3 class="skill-card-name">C &amp; C++ Systems Programming</h3>
               </div>
               <span class="skill-badge-level">Core Foundation</span>
             </div>
             <p class="skill-description">
-              Systems and algorithmic programming, pointers, dynamic memory management, structs, and object-oriented design using the C++ Standard Template Library (STL).
+              Systems and algorithmic programming, raw pointers, dynamic memory management (malloc/free, new/delete), structs, and object-oriented design using the C++ Standard Template Library (STL).
             </p>
             <div class="skill-tags-list">
               <span class="skill-tag">C (C99/C11)</span>
-              <span class="skill-tag">C++ (STL)</span>
+              <span class="skill-tag">C++ (STL Containers)</span>
               <span class="skill-tag">Pointers &amp; Memory</span>
-              <span class="skill-tag">Data Structures</span>
-              <span class="skill-tag">Algorithms</span>
+              <span class="skill-tag">OOP &amp; Classes</span>
+              <span class="skill-tag">File Streams (fstream)</span>
+              <span class="skill-tag">Bitwise Operations</span>
             </div>
           </div>
 
-          <!-- Card 2: HTML, CSS & JavaScript -->
-          <div class="skill-card" data-domain="frontend">
+          <!-- Card 2: Data Structures & Algorithms -->
+          <div class="skill-card" data-domain="dsa">
             <div class="skill-card-header">
               <div class="skill-card-title-group">
                 <div class="skill-card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                 </div>
-                <h3 class="skill-card-name">HTML5, CSS3 &amp; JavaScript</h3>
+                <h3 class="skill-card-name">Data Structures &amp; Algorithms</h3>
               </div>
-              <span class="skill-badge-level">Web Foundations</span>
+              <span class="skill-badge-level">CS Fundamentals</span>
             </div>
             <p class="skill-description">
-              Creating semantic, responsive, accessible web interfaces. Fluent with CSS Flexbox &amp; Grid layouts, responsive styling, and modern client-side JavaScript (ES6+).
+              Implementation and optimization of foundational data structures and algorithms in C/C++, focusing on space-time complexity analysis and memory layout.
             </p>
             <div class="skill-tags-list">
-              <span class="skill-tag">HTML5 Semantics</span>
-              <span class="skill-tag">CSS3 (Flexbox &amp; Grid)</span>
-              <span class="skill-tag">JavaScript (ES6+)</span>
-              <span class="skill-tag">DOM Manipulation</span>
-              <span class="skill-tag">Responsive Layouts</span>
+              <span class="skill-tag">Arrays &amp; Matrices</span>
+              <span class="skill-tag">Linked Lists</span>
+              <span class="skill-tag">Stacks &amp; Queues</span>
+              <span class="skill-tag">Binary Search Trees</span>
+              <span class="skill-tag">Sorting (Quick/Merge)</span>
+              <span class="skill-tag">Asymptotic Analysis O(N)</span>
             </div>
           </div>
 
-          <!-- Card 3: Next.js -->
-          <div class="skill-card" data-domain="frameworks">
-            <div class="skill-card-header">
-              <div class="skill-card-title-group">
-                <div class="skill-card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" ry="4"></rect><path d="M8 8v8l8-8v8"></path></svg>
-                </div>
-                <h3 class="skill-card-name">Next.js &amp; React</h3>
-              </div>
-              <span class="skill-badge-level">Modern Web</span>
-            </div>
-            <p class="skill-description">
-              Developing modern, performant web applications with Next.js App Router, modular React components, fast client/server routing, and optimized page rendering.
-            </p>
-            <div class="skill-tags-list">
-              <span class="skill-tag">Next.js</span>
-              <span class="skill-tag">React Components</span>
-              <span class="skill-tag">App Router</span>
-              <span class="skill-tag">Server Components</span>
-              <span class="skill-tag">Client Routing</span>
-            </div>
-          </div>
-
-          <!-- Card 4: PostgreSQL & REST API -->
-          <div class="skill-card" data-domain="backend">
-            <div class="skill-card-header">
-              <div class="skill-card-title-group">
-                <div class="skill-card-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
-                </div>
-                <h3 class="skill-card-name">PostgreSQL &amp; REST APIs</h3>
-              </div>
-              <span class="skill-badge-level">Data &amp; APIs</span>
-            </div>
-            <p class="skill-description">
-              Structuring relational data schemas with PostgreSQL, writing efficient SQL queries, and designing clear JSON-based REST APIs for clean frontend-backend communication.
-            </p>
-            <div class="skill-tags-list">
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">SQL Queries &amp; Joins</span>
-              <span class="skill-tag">RESTful API Design</span>
-              <span class="skill-tag">JSON Data Contracts</span>
-              <span class="skill-tag">CRUD Operations</span>
-            </div>
-          </div>
-
-          <!-- Card 5: Fedora Linux & Toolchain -->
-          <div class="skill-card" data-domain="tools">
+          <!-- Card 3: Fedora Linux & Toolchain -->
+          <div class="skill-card" data-domain="fedora">
             <div class="skill-card-header">
               <div class="skill-card-title-group">
                 <div class="skill-card-icon">
@@ -2070,14 +2108,64 @@
               <span class="skill-badge-level">Daily Driver</span>
             </div>
             <p class="skill-description">
-              Daily engineering environment on Fedora Linux. Proficient with Bash terminal navigation, Git &amp; GitHub version control, VS Code, and Postman for API testing.
+              Daily engineering environment on Fedora Linux Workstation. Proficient with GCC / G++ compilers, GNU Make (Makefiles), GDB debugging, Valgrind, Bash scripting, and Git &amp; GitHub version control.
             </p>
             <div class="skill-tags-list">
               <span class="skill-tag">Fedora Linux</span>
-              <span class="skill-tag">Bash / Shell CLI</span>
+              <span class="skill-tag">GCC / G++ Compilers</span>
+              <span class="skill-tag">GNU Make (Makefiles)</span>
+              <span class="skill-tag">GDB Debugger</span>
+              <span class="skill-tag">Valgrind</span>
+              <span class="skill-tag">Bash / POSIX Shell</span>
               <span class="skill-tag">Git &amp; GitHub</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Postman</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Web Foundations -->
+          <div class="skill-card" data-domain="web">
+            <div class="skill-card-header">
+              <div class="skill-card-title-group">
+                <div class="skill-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <h3 class="skill-card-name">Web &amp; Interface Standards</h3>
+              </div>
+              <span class="skill-badge-level">Web Foundations</span>
+            </div>
+            <p class="skill-description">
+              Creating semantic, lightweight, responsive web interfaces. Fluent with CSS Flexbox &amp; Grid layouts, modern client-side JavaScript (ES6+), and REST API JSON integration.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">HTML5 Semantics</span>
+              <span class="skill-tag">CSS3 (Flexbox &amp; Grid)</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">REST APIs (Fetch)</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Card 5: CS Core Principles -->
+          <div class="skill-card" data-domain="cs-core">
+            <div class="skill-card-header">
+              <div class="skill-card-title-group">
+                <div class="skill-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                </div>
+                <h3 class="skill-card-name">Operating Systems &amp; Principles</h3>
+              </div>
+              <span class="skill-badge-level">Academic Core</span>
+            </div>
+            <p class="skill-description">
+              Solid comprehension of core computer science fundamentals: process lifecycles, memory paging, POSIX system calls, file systems, and relational database schemas.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-tag">Operating Systems</span>
+              <span class="skill-tag">POSIX System Calls</span>
+              <span class="skill-tag">Virtual Memory &amp; Paging</span>
+              <span class="skill-tag">Process Scheduling</span>
+              <span class="skill-tag">Computer Architecture</span>
+              <span class="skill-tag">DBMS &amp; SQL Basics</span>
             </div>
           </div>
 
@@ -2093,146 +2181,44 @@
         <div class="section-header">
           <span class="section-tag">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-            SYSTEM ARCHITECTURE & PRODUCTION CODE
+            LIGHTWEIGHT PRACTICAL SOFTWARE
           </span>
           <h2 class="section-title" id="projects-heading">Lightweight Projects</h2>
           <p class="section-subtitle">
-            Focused, clean, and practical engineering projects highlighting Next.js, C/C++, PostgreSQL, and REST API development.
+            Focused, clean, and practical engineering projects highlighting C/C++ POSIX tools on Fedora Linux, file data structures, and native web utilities.
           </p>
         </div>
 
         <div class="projects-grid">
           
-          <!-- Project 1: DevNotes -->
+          <!-- Project 1: Fedora SysInspect CLI Tool in C / C++ -->
           <article class="project-card">
-            <div class="project-media-wrap">
-              <span class="project-category-badge">Next.js · PostgreSQL · REST API</span>
-              <img src="./project-codesphere.jpg" alt="DevNotes Code Snippet and Markdown Notes Keeper" class="project-img" loading="lazy">
+            <div class="project-media-wrap project-preview-terminal">
+              <span class="project-category-badge">C &amp; C++ · Fedora POSIX Utility</span>
+              <div class="preview-cli-window">
+                <div class="preview-cli-top">
+                  <span class="p-dot dot-r"></span>
+                  <span class="p-dot dot-y"></span>
+                  <span class="p-dot dot-g"></span>
+                  <span class="preview-cli-title">fedora: ~/sysinspect</span>
+                </div>
+                <div class="preview-cli-code">
+                  <div class="cli-line"><span class="c-prompt">$</span> <span class="c-cmd">./sysinspect</span> --scan /var/log</div>
+                  <div class="cli-line c-dim">▸ Walking inode tree... 1,420 files indexed</div>
+                  <div class="cli-line c-cyan">▸ /proc/meminfo: [RAM 16.0GB | Avail 11.4GB]</div>
+                  <div class="cli-line c-green">✔ Valgrind audit: 0 errors / 0 leaks (POSIX OK)</div>
+                </div>
+              </div>
             </div>
 
             <div class="project-body">
               <div class="project-header-row">
-                <h3 class="project-title">DevNotes — Code &amp; Notes Keeper</h3>
+                <h3 class="project-title">Fedora SysInspect — CLI Memory &amp; File Inspector</h3>
                 <span class="project-year">2024–2025</span>
               </div>
 
               <p class="project-problem-text">
-                A clean, responsive web application for Computer Science students to store, tag, and search code snippets and study notes. Built with Next.js, connecting to a PostgreSQL database via REST API endpoints for quick search and tag filtering.
-              </p>
-
-              <!-- Metrics -->
-              <div class="project-metrics-box">
-                <div class="metric-item">
-                  <span class="metric-value">&lt;120ms</span>
-                  <span class="metric-label">Fast Search</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-value">Next.js</span>
-                  <span class="metric-label">Full Stack</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-value">Postgres</span>
-                  <span class="metric-label">Database</span>
-                </div>
-              </div>
-
-              <!-- Tech Stack -->
-              <div class="project-tech-stack">
-                <span class="tech-pill">Next.js</span>
-                <span class="tech-pill">PostgreSQL</span>
-                <span class="tech-pill">REST API</span>
-                <span class="tech-pill">HTML5 &amp; CSS3</span>
-                <span class="tech-pill">JavaScript</span>
-              </div>
-
-              <div class="project-card-actions">
-                <a href="https://github.com/pritisnehadas" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <span>Source Code</span>
-                </a>
-                <button class="btn btn-sm btn-outline" onclick="triggerTerminalCmd('project 1')">
-                  <span>Run CLI Spec</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: Campus Notice Board -->
-          <article class="project-card">
-            <div class="project-media-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #111a2f, #070c17);">
-              <span class="project-category-badge">HTML · CSS · JS · REST API</span>
-              <div style="font-family: var(--font-mono); text-align: center; color: var(--accent-cyan); padding: 20px;">
-                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                <div style="font-weight: 700; font-size: 1.1rem; color: #fff;">Campus Notice Board</div>
-                <div style="font-size: 0.75rem; color: var(--text-muted);">Dhemaji Engineering College Feed</div>
-              </div>
-            </div>
-
-            <div class="project-body">
-              <div class="project-header-row">
-                <h3 class="project-title">Campus Notice &amp; Event Feed</h3>
-                <span class="project-year">2024</span>
-              </div>
-
-              <p class="project-problem-text">
-                A lightweight college notice board for Dhemaji Engineering College students to view circulars, schedules, and departmental notices. Fetches updates via REST API with instant client-side keyword filtering and zero framework bloat.
-              </p>
-
-              <!-- Metrics -->
-              <div class="project-metrics-box">
-                <div class="metric-item">
-                  <span class="metric-value">&lt;40KB</span>
-                  <span class="metric-label">Bundle Size</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-value">Instant</span>
-                  <span class="metric-label">Search</span>
-                </div>
-                <div class="metric-item">
-                  <span class="metric-value">Zero</span>
-                  <span class="metric-label">Dependencies</span>
-                </div>
-              </div>
-
-              <!-- Tech Stack -->
-              <div class="project-tech-stack">
-                <span class="tech-pill">HTML5</span>
-                <span class="tech-pill">CSS3</span>
-                <span class="tech-pill">JavaScript (ES6+)</span>
-                <span class="tech-pill">REST API</span>
-              </div>
-
-              <div class="project-card-actions">
-                <a href="https://github.com/pritisnehadas" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <span>Source Code</span>
-                </a>
-                <button class="btn btn-sm btn-outline" onclick="triggerTerminalCmd('project 2')">
-                  <span>Run CLI Spec</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Fedora CLI System Tool in C / C++ -->
-          <article class="project-card">
-            <div class="project-media-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #0f1c30, #060a14);">
-              <span class="project-category-badge">C &amp; C++ · Fedora Linux POSIX</span>
-              <div style="font-family: var(--font-mono); text-align: center; color: var(--accent-cyan); padding: 20px;">
-                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 8px;"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-                <div style="font-weight: 700; font-size: 1.1rem; color: #fff;">Fedora CLI SysTool</div>
-                <div style="font-size: 0.75rem; color: var(--accent-green);">C &amp; C++ / POSIX Utility</div>
-              </div>
-            </div>
-
-            <div class="project-body">
-              <div class="project-header-row">
-                <h3 class="project-title">Fedora CLI System &amp; File Inspector</h3>
-                <span class="project-year">2024</span>
-              </div>
-
-              <p class="project-problem-text">
-                A native command-line utility written in C and C++ for Fedora Linux. Walks directories to analyze disk space, finds duplicate file sizes, and parses system memory statistics from /proc/meminfo with minimal memory overhead.
+                A native command-line utility written in C and C++ for Fedora Linux. Recursively walks directory trees to analyze disk usage, identifies duplicate file sizes, and parses system memory statistics from /proc/meminfo with zero third-party dependencies and minimal footprint.
               </p>
 
               <!-- Metrics -->
@@ -2258,6 +2244,141 @@
                 <span class="tech-pill">Fedora Linux</span>
                 <span class="tech-pill">POSIX APIs</span>
                 <span class="tech-pill">Makefile</span>
+                <span class="tech-pill">GDB</span>
+              </div>
+
+              <div class="project-card-actions">
+                <a href="https://github.com/pritisnehadas" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Source Code</span>
+                </a>
+                <button class="btn btn-sm btn-outline" onclick="triggerTerminalCmd('project 1')">
+                  <span>Run CLI Spec</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: StudentRecord++ File Engine in C++ -->
+          <article class="project-card">
+            <div class="project-media-wrap project-preview-terminal">
+              <span class="project-category-badge">C++ · Binary File I/O &amp; STL</span>
+              <div class="preview-cli-window">
+                <div class="preview-cli-top">
+                  <span class="p-dot dot-r"></span>
+                  <span class="p-dot dot-y"></span>
+                  <span class="p-dot dot-g"></span>
+                  <span class="preview-cli-title">student_engine.cpp</span>
+                </div>
+                <div class="preview-cli-code">
+                  <div class="cli-line"><span class="c-kw">struct</span> <span class="c-type">StudentRecord</span> { <span class="c-type">uint32_t</span> roll; <span class="c-type">char</span> name[32]; };</div>
+                  <div class="cli-line c-dim">std::fstream bin("dec_db.dat", std::ios::binary);</div>
+                  <div class="cli-line c-cyan">▸ BSTIndex::search(250104) ➔ Offset 0x004F</div>
+                  <div class="cli-line c-green">✔ Lookup complete: &lt;2ms (In-Memory Index)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-row">
+                <h3 class="project-title">StudentRecord++ — Binary File Record Engine</h3>
+                <span class="project-year">2024</span>
+              </div>
+
+              <p class="project-problem-text">
+                An academic student management system engineered in modern C++. Uses structured binary file streams (fstream) with fixed-width records, an in-memory Binary Search Tree (BST) for fast roll number indexing, and custom sorting routines without external databases.
+              </p>
+
+              <!-- Metrics -->
+              <div class="project-metrics-box">
+                <div class="metric-item">
+                  <span class="metric-value">&lt;2ms</span>
+                  <span class="metric-label">Lookup Time</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">Binary</span>
+                  <span class="metric-label">File I/O</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">STL</span>
+                  <span class="metric-label">Containers</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">C++</span>
+                <span class="tech-pill">OOP Architecture</span>
+                <span class="tech-pill">Binary Streams</span>
+                <span class="tech-pill">Data Structures</span>
+                <span class="tech-pill">Algorithms</span>
+              </div>
+
+              <div class="project-card-actions">
+                <a href="https://github.com/pritisnehadas" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Source Code</span>
+                </a>
+                <button class="btn btn-sm btn-outline" onclick="triggerTerminalCmd('project 2')">
+                  <span>Run CLI Spec</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: DEC Campus Notice & Notes Keeper -->
+          <article class="project-card">
+            <div class="project-media-wrap project-preview-terminal">
+              <span class="project-category-badge">HTML5 · CSS3 · Vanilla JS · REST API</span>
+              <div class="preview-cli-window">
+                <div class="preview-cli-top">
+                  <span class="p-dot dot-r"></span>
+                  <span class="p-dot dot-y"></span>
+                  <span class="p-dot dot-g"></span>
+                  <span class="preview-cli-title">dec-hub.local:3000</span>
+                </div>
+                <div class="preview-cli-code">
+                  <div class="cli-line"><span class="c-prompt">Q:</span> <span class="c-cmd">"ASTU CSE Semester 2 Timetable"</span></div>
+                  <div class="cli-line c-cyan">✦ [DEC Notification] Exam schedule released</div>
+                  <div class="cli-line c-dim">✦ [Coursework] C++ Data Structures syllabus</div>
+                  <div class="cli-line c-green">✔ Load time: 14ms · Size: &lt;35KB · Zero deps</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-row">
+                <h3 class="project-title">Campus Notice &amp; Notes Keeper</h3>
+                <span class="project-year">2024</span>
+              </div>
+
+              <p class="project-problem-text">
+                A lightweight college notice board and study notes organizer designed for Dhemaji Engineering College students. Features instant client-side keyword search, tag-based categorization, zero external library dependencies, and lightning-fast load times.
+              </p>
+
+              <!-- Metrics -->
+              <div class="project-metrics-box">
+                <div class="metric-item">
+                  <span class="metric-value">&lt;35KB</span>
+                  <span class="metric-label">Bundle Size</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">Instant</span>
+                  <span class="metric-label">Search</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">Zero</span>
+                  <span class="metric-label">Dependencies</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">REST API</span>
+                <span class="tech-pill">Responsive UI</span>
               </div>
 
               <div class="project-card-actions">
@@ -2618,11 +2739,10 @@
       // 4. Interactive Typing Effect in Hero
       // ----------------------------------------------------------------------
       const roles = [
-        'Computer Science Engineer',
+        'C & C++ Systems Programmer',
         'DEC Batch 2025 – 2029',
-        'C & C++ / Next.js Developer',
-        'Fedora Linux Enthusiast',
-        'PostgreSQL & REST APIs'
+        'Data Structures & Algorithms',
+        'Fedora Linux Workstation'
       ];
       let roleIdx = 0;
       let charIdx = 0;
@@ -2740,11 +2860,11 @@
         help: () => `
 Available system commands:
   • <span class="text-cyan">about</span>       : Overview of Pritisneha Das & background
-  • <span class="text-cyan">skills</span>      : List technical competencies & languages
-  • <span class="text-cyan">projects</span>    : Inspect featured engineering projects
+  • <span class="text-cyan">skills</span>      : List C, C++, Data Structures & Fedora toolchain
+  • <span class="text-cyan">projects</span>    : Inspect lightweight engineering projects
   • <span class="text-cyan">education</span>   : View academic credentials at DEC
   • <span class="text-cyan">contact</span>     : Display direct contact channels
-  • <span class="text-cyan">neofetch</span>    : System & engineer telemetry banner
+  • <span class="text-cyan">neofetch</span>    : System & Fedora Linux telemetry banner
   • <span class="text-cyan">clear</span>       : Wipe terminal output buffer
   • <span class="text-cyan">date</span>        : Current local timestamp (IST)
   • <span class="text-cyan">whoami</span>      : Active visitor session identity
@@ -2756,40 +2876,40 @@ Role        : Computer Science Engineer (B.Tech 2025 – 2029)
 College     : Dhemaji Engineering College (DEC), Assam
 Location    : Tezpur, Assam, India
 OS          : Fedora Linux (Workstation Edition)
-Skills      : HTML, CSS, JavaScript, Next.js, C, C++, PostgreSQL, REST API
+Focus       : Low-level C, C++ (STL), Pointers, Memory Management, DSA.
 `,
         skills: () => `
 <span class="text-green">[TECHNICAL SPECIFICATIONS]</span>
-• Languages     : C, C++, JavaScript (ES6+), HTML5, CSS3
-• Web Frameworks: Next.js, React
-• Databases/API : PostgreSQL, REST API (JSON)
-• OS / Platform : Fedora Linux (Workstation)
-• Tools         : Git, GitHub, VS Code, Postman
+• Core Languages: C (C99/C11), C++ (C++17/20, STL)
+• Systems & CS  : Pointers, Dynamic Memory, DSA, Structs, File Streams, POSIX
+• OS / Platform : Fedora Linux Workstation, Linux Kernel /proc inspection
+• Toolchain     : GCC, G++, GNU Make, GDB Debugger, Valgrind, Bash, Git & GitHub
+• Web Basics    : HTML5 Semantics, CSS3 (Flexbox & Grid), JavaScript (ES6+)
 `,
         projects: () => `
-<span class="text-green">[FEATURED REPOSITORIES]</span>
-[1] DevNotes Hub      - Clean code snippet & notes keeper (Next.js, PostgreSQL, REST API)
-[2] Campus Notice App - Lightweight DEC college notice board (HTML, CSS, JS, REST API)
-[3] Fedora SysTool    - Fast CLI directory & memory inspector in C / C++ (Fedora POSIX)
-Type <span class="text-cyan">'project 1'</span>, <span class="text-cyan">'project 2'</span> or <span class="text-cyan">'project 3'</span> for details.
+<span class="text-green">[FEATURED LIGHTWEIGHT PROJECTS]</span>
+[1] Fedora SysInspect - Directory & /proc memory tool in C / C++ (POSIX)
+[2] StudentRecord++   - Binary file record persistence & BST indexing (C++)
+[3] Campus Notes Hub  - Lightweight college notice board & notes app (Web)
+Type <span class="text-cyan">'project 1'</span>, <span class="text-cyan">'project 2'</span> or <span class="text-cyan">'project 3'</span> for detailed architecture breakdown.
 `,
         'project 1': () => `
-<span class="text-cyan">DevNotes Hub</span>:
-• Overview  : Lightweight developer note & snippet organizer.
-• Stack     : Next.js, PostgreSQL, REST API, CSS3.
-• Features  : Tag-based search, syntax highlighting, relational storage in Postgres.
+<span class="text-cyan">Fedora SysInspect (C / C++ POSIX CLI)</span>:
+• Overview  : Native command-line file tree and system memory analyzer for Fedora Linux.
+• Features  : Recursive directory traversal, duplicate file detection, /proc/meminfo parser.
+• Footprint : Zero dependencies, compiled with GCC, sub-1.5MB binary size.
 `,
         'project 2': () => `
-<span class="text-cyan">Campus Notice Board</span>:
-• Overview  : Fast, zero-bloat college notice feed for Dhemaji Engineering College.
-• Stack     : HTML5, CSS3, JavaScript (ES6+), REST API.
-• Features  : Instant search, department filtering, lightweight responsive design.
+<span class="text-cyan">StudentRecord++ (C++ Binary File Engine)</span>:
+• Overview  : High-performance academic record manager using binary file streams.
+• Features  : Fixed-width binary records, in-memory BST roll-number index, fast sorted lookup.
+• Tech      : C++ OOP, fstream binary I/O, STL containers, custom search routines.
 `,
         'project 3': () => `
-<span class="text-cyan">Fedora CLI SysTool in C / C++</span>:
-• Overview  : Native command-line utility for Fedora Linux systems.
-• Stack     : C, C++, Fedora POSIX APIs.
-• Features  : Rapid file traversal, /proc memory inspection, minimal footprint.
+<span class="text-cyan">Campus Notice & Notes Hub</span>:
+• Overview  : Fast, zero-bloat college notice and lecture notes organizer for DEC students.
+• Features  : Client-side keyword search, category filtering, responsive web design.
+• Footprint : Pure HTML5, CSS3, and modern Vanilla JavaScript (&lt;35KB bundle).
 `,
         education: () => `
 <span class="text-green">[ACADEMIC RECORD]</span>
@@ -2806,26 +2926,26 @@ LinkedIn    : <a href="https://www.linkedin.com/in/pritisneha-das-768924442" tar
 Location    : Tezpur, Assam, India
 `,
         neofetch: () => `
-<pre style="color: var(--accent-cyan); font-size: 0.725rem; line-height: 1.25; overflow-x: auto;">
-             .',;::::;,'.                 <b>pritisneha@dec-cs</b>
-         .';:cccccccccccc:;,.             -----------------
-      .;cccccccccccccccccccccc;.          <b>OS</b>: Fedora Linux (x86_64)
-    .:cccccccccccccccccccccccccc:.        <b>Host</b>: Dhemaji Engineering College (DEC)
-  .;ccccccccccccc;.:dddl:.;ccccccc;.      <b>Kernel</b>: 6.x Linux x86_64
- .:ccccccccccccc;OWMKOOXMWd;ccccccc:.     <b>Major</b>: Computer Science & Engineering
-.:ccccccccccccc;KMMc;cc;xMMc;ccccccc:.    <b>Batch</b>: Academic Batch (2025 – 2029)
-,cccccccccccccc;MMM.;cc;;WW:;cccccccc,    <b>Languages</b>: C, C++, JavaScript, HTML, CSS
-:cccccccccccccc;MMM.;cccccccccccccccc:    <b>Frameworks</b>: Next.js, React
-:ccccccc;oxOOOo;MMM000k.;cccccccccccc:    <b>Databases</b>: PostgreSQL, REST APIs
-cccccc;0MMKxdd:;MMMkddc.;cccccccccccc;    <b>Shell</b>: bash 5.3 / zsh
-ccccc;XMO';cccc;MMM.;cccccccccccccccc'    <b>Terminal</b>: DEC-Console-v2.5
-ccccc;MMo;ccccc;MMW.;ccccccccccccccc;     <b>Status</b>: Open for Opportunities
-ccccc;0MNc.ccc.xMMd;ccccccccccccccc;
-cccccc;dNMWXXXWM0:;cccccccccccccc:,
-cccccccc;.:odl:.;cccccccccccccc:,.
-ccccccccccccccccccccccccccccc:'.
-:ccccccccccccccccccccccc:;,..
- ':cccccccccccccccc::;,.
+<pre style="color: #51a2da; font-family: var(--font-mono); font-size: 0.715rem; line-height: 1.24; overflow-x: auto; margin: 6px 0;">
+             .',;::::;,'.                 <b style="color: #fff;">pritisneha@fedora-dec</b>
+         .';:cccccccccccc:;,.             <span style="color: #38bdf8;">---------------------</span>
+      .;cccccccccccccccccccccc;.          <b style="color: #fff;">OS</b>: Fedora Linux x86_64
+    .:cccccccccccccccccccccccccc:.        <b style="color: #fff;">Host</b>: Dhemaji Engineering College (DEC)
+  .;ccccccccccccc;<span style="color:#fff;">.:dddl:.</span>;ccccccc;.      <b style="color: #fff;">Kernel</b>: Linux 6.x (Fedora Workstation)
+ .:ccccccccccccc;<span style="color:#fff;">OWMKOOXMWd</span>;ccccccc:.     <b style="color: #fff;">Uptime</b>: 4-Year B.Tech Program
+.:ccccccccccccc;<span style="color:#fff;">KMMc</span>;cc;<span style="color:#fff;">xMMc</span>;ccccccc:.    <b style="color: #fff;">Major</b>: Computer Science &amp; Engineering
+,cccccccccccccc;<span style="color:#fff;">MMM.</span>;cc;;<span style="color:#fff;">WW:</span>;cccccccc,    <b style="color: #fff;">Batch</b>: Academic Batch (2025 – 2029)
+:cccccccccccccc;<span style="color:#fff;">MMM.</span>;cccccccccccccccc:    <b style="color: #fff;">Location</b>: Dhemaji / Tezpur, Assam
+:ccccccc;<span style="color:#fff;">oxOOOo;MMM000k.</span>;cccccccccccc:    <b style="color: #fff;">Languages</b>: C (C99/C11), C++ (C++17/20, STL)
+cccccc;<span style="color:#fff;">0MMKxdd:;MMMkddc.</span>;cccccccccccc;    <b style="color: #fff;">Data Structures</b>: Trees, Lists, Stacks, Queues
+ccccc;<span style="color:#fff;">XMO'</span>;cccc;<span style="color:#fff;">MMM.</span>;cccccccccccccccc'    <b style="color: #fff;">Algorithms</b>: Sorting, Searching, Big-O
+ccccc;<span style="color:#fff;">MMo</span>;ccccc;<span style="color:#fff;">MMW.</span>;ccccccccccccccc;     <b style="color: #fff;">Environment</b>: Fedora Linux Workstation
+ccccc;<span style="color:#fff;">0MNc</span>.ccc.<span style="color:#fff;">xMMd</span>;cccccccccccccccc;     <b style="color: #fff;">Toolchain</b>: GCC, G++, Make, GDB, Valgrind
+cccccc;<span style="color:#fff;">dNMWXXXWM0:</span>;ccccccccccccc:,       <b style="color: #fff;">Shell</b>: Bash / POSIX Shell
+ccccccc;<span style="color:#fff;">.:odl:.</span>;ccccccccccccccc;,.       <b style="color: #fff;">VCS</b>: Git &amp; GitHub
+cccccccccccccccccccccccccccccccc:'.       <b style="color: #fff;">Terminal</b>: DEC-Console-v2.5
+:ccccccccccccccccccccccc:;,..             <b style="color: #fff;">Palette</b>: <span style="background:#294172;padding:0 5px;"> </span><span style="background:#3c6eb4;padding:0 5px;"> </span><span style="background:#51a2da;padding:0 5px;"> </span><span style="background:#00f2fe;padding:0 5px;"> </span><span style="background:#ffffff;padding:0 5px;"> </span>
+ ':cccccccccccccccc::;,.                  <b style="color: #fff;">Status</b>: Ready for Engineering Roles ⚡
 </pre>
 `,
         date: () => new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' (IST)',
@@ -2843,7 +2963,7 @@ ccccccccccccccccccccccccccccc:'.
         // Print input line
         const inputLine = document.createElement('div');
         inputLine.className = 'terminal-line';
-        inputLine.innerHTML = `<span class="terminal-prompt">pritisneha@dec-cs:~$</span> <span class="terminal-cmd">${escapeHTML(cmdRaw)}</span>`;
+        inputLine.innerHTML = `<span class="terminal-prompt">pritisneha@fedora-dec:~$</span> <span class="terminal-cmd">${escapeHTML(cmdRaw)}</span>`;
         terminalOutput.appendChild(inputLine);
 
         // Process response
